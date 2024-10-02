@@ -1,0 +1,301 @@
+<!--Google Play Games Clone-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta name="Discription" content="Web Course 2024 ---- Abhishek">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Course</title>
+
+    <style>
+        nav {
+            width: 1350px;
+            background-color: black;
+            height: 40px;
+            padding-left: 100px;
+            border: 10px black;
+        }
+
+        span {
+            color: white;
+            line-height: 2.1;
+        }
+
+        body {
+            width: 100%;
+            height: 500px;
+            padding: 0%;
+            flex-direction: row;
+            background-color: rgba(4, 0, 0, 0.915);
+        }
+
+
+        h1 {
+            font-size: 70px;
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        a {
+            color: #0ae39b;
+        }
+
+        button {
+            height: 45px;
+            width: 150px;
+            border-radius: 25px;
+            border: 2px solid;
+            background-color: #4ee7b4;
+        }
+
+        button:hover {
+            color: blue;
+        }
+
+        .A {
+            padding-left: 120px;
+        }
+
+        .Image {
+            width: 60%;
+            height: 750px;
+            padding-left: 4px;
+            margin: 10px;
+            animation-duration: 15s;
+            animation-name: replace;
+            animation-delay: 4ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        }
+
+        @keyframes replace {
+
+            0%,
+            100% {
+                background: url(image1.jpg)left top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                float: right;
+                width: 40%;
+                height: 700px;
+                object-position: right top;
+                border: 5px black;
+            }
+
+            25% {
+                background: url(cocm.jpg)left top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                float: right;
+                width: 40%;
+                height: 700px;
+                object-position: right top;
+                border: 5px black;
+
+            }
+
+            50% {
+                background: url(coc.jpg) left top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                float: right;
+                width: 40%;
+                height: 700px;
+                object-position: right top;
+                border: 5px black;
+
+            }
+
+            75% {
+                background: url(ff.jpg) left top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                float: right;
+                width: 40%;
+                height: 700px;
+                object-position: right top;
+                border: 5px black;
+            }
+
+        }
+
+        /*@media screen and (orientation: landscape/portrait) {
+            body{
+                border: 5px solid black;
+            }
+        }*/
+
+        /* @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+            .ipad-portrait {
+                color: red;
+            }
+
+            your css rules for ipad portrait 
+        }*/
+
+        /*@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+            .ipad-landscape {
+                color: blue;
+            }
+
+            your css rules for ipad landscape
+        } */
+
+        @media only screen and (max-width:600px) {
+            body {
+                width: 100%;
+                height: 900px;
+                flex-direction: column;
+
+            }
+
+            nav {
+                width: 100%;
+                height: 20px;
+                font-size: 0.4em;
+                padding-left: 25px;
+            }
+
+            span {
+                color: white;
+                line-height: 1.2;
+            }
+
+            h1 {
+                font-size: 80px;
+                color: white;
+            }
+
+            p {
+                color: white;
+            }
+
+            a {
+                color: #0ae39b;
+            }
+
+            button {
+                height: 20px;
+                width: 100%px;
+                border-radius: 15px;
+                border: 2px solid;
+            }
+
+            button:hover {
+                color: blue;
+            }
+
+            .A {
+                padding-left: 40px;
+            }
+
+            .Image {
+                animation-duration: 15s;
+                animation-name: replace;
+                animation-delay: 4ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+            }
+
+            @keyframes replace {
+
+                0%,
+                100% {
+                    background: url(image1.jpg) left top;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    float: right top;
+                    width: 100%;
+                    height: 50%;
+                }
+
+                25% {
+                    background: url(cocm.jpg) left top;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    float: right top;
+                    width: 100%;
+                    height: 50%;
+
+                }
+
+                50% {
+                    background: url(coc.jpg) left top;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    float: right top;
+                    width: 100%;
+                    height: 50%;
+
+                }
+
+                75% {
+                    background: url(ff.jpg) left top;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    float: right top;
+                    width: 100%;
+                    height: 50%;
+                }
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="Navigation">
+            <span>Google Play Games</span>&emsp;&emsp;&emsp;
+            <span>Overview</span>&emsp;
+            <span>Features</span>&emsp;
+            <span>System Requirments</span>&emsp;
+            <span>FAQs</span>&emsp;&emsp;
+            <span>|<span>&emsp;&emsp;
+                    <span>Explore Games</span>
+        </nav>
+    </header>
+
+    <div class="Image"></div>
+
+    <div class="Container">
+
+        <div class="A">
+            <h1>Take Mobile Gaming <br>To Your PC</h1>
+
+            <p>Exlore And Play Mobile Games On PC With Google Play Games Beta.<br>
+                Get Started.Download It On A Computer That Meets The <br><a href="">Minimum Requirements.</a></p>
+
+            <br>
+            <br>
+            <br>
+
+            <button type='download'>Download Beta</button>
+
+            <br>
+            <br>
+            <br>
+
+            <p>By Downloading Google Play Games. You Agree To The
+                <a href="">Google Tearms Of Service</a>
+                And
+                <br>
+                <a href="">Google Play Tearms Of Service</a>
+                ,And Acknowledge That Your Information Will Be Handled In Accordance With The
+                <br>
+                <a href="">Google Privacy Policy</a>.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
