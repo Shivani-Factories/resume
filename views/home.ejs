@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Moderustic", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(12, 12, 12);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            width: 100vw;
+        }
+        .login {
+            cursor: pointer;
+            flex-direction: column;
+            text-align: center;
+            align-content: center;
+            background-color: rgb(11, 11, 11);
+            border-radius: 12px;
+            height: 63vh;
+            width: 75vw; 
+            box-shadow: 0px 0px 30px #4ee7b4;
+            padding: 20px;
+        }
+        marquee {
+            text-align: top;
+            color: aqua;
+            font-size: 3em;
+            margin-bottom: 20px;
+            display: block;
+        }
+        li {
+            list-style: none;
+            display: inline;
+            margin-right: 2vw;
+        }
+        a {
+            color: rgba(255, 255, 255, 0.724);
+            text-decoration: none;
+            font-size: 7vh;
+            margin: 9px;
+        }
+        a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        input {
+            background-color: transparent;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom: 1.5px solid white;
+            border-radius: 0;
+            height: 6vh;
+            width: 26vw;
+            margin-top: 3%;
+            padding-left: 12px;
+        }
+        input::placeholder {
+            color: white;
+        }
+        input, select, textarea {
+            color: white;
+        }
+        button {
+            color: white;
+            margin-top: 5%;
+            background-color: #4ee7b4;
+            height: 5vh;
+            width: 10vw;
+            border: none;
+            border-radius: 20px;
+        }
+        button:hover {
+            border: none;
+            color: #4ee7b4;
+            background-color: rgba(255, 255, 255, 0.954);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <marquee>Welcome to the Feedback App</marquee>
+            <li><a href="/register">SignUp</a></li>
+            <li><a href="/login" id="sign">Login</a></li>
+            <li><a href="/logout">Logout</a></li>
+            <li><a href="/feedback_form">Feedback</a></li>
+        </div>
+    </div>
+</body>
+</html>
